@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cheick Oumarou Samaké — Développeur Full Stack</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio — Cheick Oumarou Samaké, développeur Full Stack (Java, Angular, Spring Boot, SQL) à Nantes." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1>Cheick Oumarou <span class="last">Samaké</span></h1>
+        <p class="role">Développeur Full Stack — Nantes</p>
+      </div>
+      <nav class="nav">
+        <a href="#about">À propos</a>
+        <a href="#skills">Compétences</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <h2>Bonjour, je suis <strong>Cheick</strong></h2>
+        <p class="lead">Développeur Full Stack passionné par la conception d’applications performantes et bien structurées — Java, Angular, Spring Boot, SQL.</p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="assets/CV_SAMAKE.pdf" download>📄 Télécharger mon CV</a>
+          <a class="btn ghost" href="#projects">Voir mes projets</a>
+        </div>
+
+        <ul class="contact-quick">
+          <li>📍 Basé à Nantes (mobilité : 44 & périphérie)</li>
+          <li>✉ <a href="mailto:samake.cheick.oumar2002@gmail.com">samake.cheick.oumar2002@gmail.com</a></li>
+          <li>📞 07 53 89 60 82</li>
+        </ul>
+      </div>
+
+      <div class="hero-right">
+        <div class="photo-wrap">
+          <img src="assets/photo.jpg" alt="Photo de Cheick Samaké" id="profile-photo">
+        </div>
+        <div class="meta-card">
+          <p><strong>Âge :</strong> 23 ans</p>
+          <p><strong>Permis :</strong> B & C</p>
+          <p><strong>Statut :</strong> Développeur Full Stack</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section container">
+      <h2>À propos</h2>
+      <p>
+        Développeur Full Stack formé à la Faculté des Sciences et Techniques de Nantes, j’ai acquis une solide expérience à travers plusieurs projets en entreprise et universitaires.
+        Mon objectif : créer des applications fiables, modernes et évolutives, tout en continuant à approfondir mes compétences en développement web et en architecture logicielle.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section container">
+      <h2>Compétences</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Langages</h3>
+          <p>Java · Python · C++ · C# · JavaScript · TypeScript · SQL · HTML/CSS</p>
+        </div>
+        <div class="skill-card">
+          <h3>Frameworks & Outils</h3>
+          <p>Angular · Spring Boot · MySQL · GitLab · Git · Logisim</p>
+        </div>
+        <div class="skill-card">
+          <h3>Concepts & Mathématiques</h3>
+          <p>Algèbre linéaire · Analyse numérique · Probabilités · Algorithmique · Optimisation</p>
+        </div>
+        <div class="skill-card">
+          <h3>Réseaux & Systèmes</h3>
+          <p>TCP/IP · HTTP · Linux / Windows Server · Proxy · Contrôle d’accès</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section container">
+      <h2>Projets & Expériences</h2>
+
+      <article class="project">
+        <h3>Générateur de tests unitaires — LS2N (équipe OGRE)</h3>
+        <p><strong>Avril — Juin 2025</strong> — Développement d’un générateur de tests unitaires pour une bibliothèque d’arithmétique sur les intervalles. Étude et modélisation des propriétés des fonctions mathématiques (exp, log, trigonométrie...).</p>
+        <p class="project-meta">Tech : Scripts automatisés, modélisation mathématique, Java.</p>
+      </article>
+
+      <article class="project">
+        <h3>Application hospitalière — G TECH SERVICES</h3>
+        <p><strong>Avril — Juillet 2024</strong> — Conception et développement d’une application hospitalière complète : backend Java/Spring Boot, frontend Angular, base MySQL, et documentation technique.</p>
+        <p class="project-meta">Tech : Java, Spring Boot, Angular, MySQL, API REST.</p>
+      </article>
+
+      <article class="project">
+        <h3>Projets universitaires</h3>
+        <ul>
+          <li>Application de gestion bancaire en Java (comptes, transactions, suivi des bureaux)</li>
+          <li>Processeur WDR PC-8 avec Logisim</li>
+          <li>Applications web et mobiles — projets personnels et académiques</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div>
+          <p>Envie de collaborer ou d’échanger sur un projet ?</p>
+          <p><strong>Email :</strong> <a href="mailto:samake.cheick.oumar2002@gmail.com">samake.cheick.oumar2002@gmail.com</a></p>
+          <p><strong>Téléphone :</strong> 07 53 89 60 82</p>
+          <p><strong>LinkedIn :</strong> <span id="linkedin-placeholder">(à ajouter)</span></p>
+        </div>
+
+        <form id="contact-form" class="contact-form" onsubmit="handleContact(event)">
+          <label>
+            Nom
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Envoyer</button>
+          <p class="form-note">Le formulaire ouvre votre client mail local.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Cheick O. Samaké — Développeur Full Stack</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
